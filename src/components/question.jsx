@@ -14,6 +14,7 @@ class Question extends Component {
         compType = <Rating icon="star" defaultRating={0} maxRating={10} />;
         break;
       default:
+          
         break;
     }
     return compType;
@@ -23,8 +24,8 @@ class Question extends Component {
     return (
       <React.Fragment>
         <Form.Field>
-          <label>Vad heter du?</label>
-          {this.answerType(this.props.onAnswerType)}
+          <label>{this.props.onQuestion.label}</label>
+          {this.answerType(this.props.onQuestion.answerType)}
         </Form.Field>
       </React.Fragment>
     );
