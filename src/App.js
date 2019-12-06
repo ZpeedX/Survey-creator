@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import Survey from "./components/survey";
 import Header from "./components/header";
 import {BrowserRouter as Router} from 'react-router-dom';

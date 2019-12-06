@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { Form, Input, Rating } from "semantic-ui-react";
 
 class Question extends Component {
-  state = {};
-
   answerType = type => {
     var compType = "";
     switch (type) {
@@ -14,7 +12,6 @@ class Question extends Component {
         compType = <Rating icon="star" defaultRating={0} maxRating={10} />;
         break;
       default:
-          
         break;
     }
     return compType;
