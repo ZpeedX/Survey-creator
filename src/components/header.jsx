@@ -37,12 +37,13 @@ class Header extends Component {
         </Menu.Item>
 
         <Menu.Item
-          /*as={Link}*/
+          as={Link}
           name="sign-in"
           active={activeItem === "sign-in"}
           onClick={this.handleItemClick}
+          to="/surveyCreator"
         >
-          Sign-in
+          Create Survey
         </Menu.Item>
       </Menu>
     );

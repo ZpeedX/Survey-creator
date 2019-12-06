@@ -3,6 +3,7 @@ import Survey from "./components/survey";
 import Header from "./components/header";
 import {BrowserRouter as Router} from 'react-router-dom';
 import {Route, Link} from 'react-router-dom';
+import SurveyCreator from './components/surveyCreator';
 
 function App() {
   return (
@@ -15,12 +16,8 @@ function App() {
         }
       } />
 
-        <Route path="/survey" component={Survey} render= {
-        () => {
-          return ( <h1> Welcome Home </h1> )
-        }
-      } />
-
+        <Route path="/survey" component={Survey} />
+        <Route path="/surveyCreator" component={SurveyCreator} />
       
     </React.Fragment>
     </Router>
